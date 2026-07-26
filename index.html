@@ -12,86 +12,117 @@
 <body>
 
 <header>
-    💎 MAHIN BD TOP UP 💎
+    <h1>💎 MAHIN BD TOP UP 💎</h1>
 </header>
 
 
-<section class="card">
+<div class="banner">
+    <h2>🔥 Free Fire Top Up Store 🔥</h2>
+    <p>Instant Diamond & Membership Top Up</p>
+</div>
 
-<h2>🔥 Free Fire Diamond Top Up</h2>
 
-<select>
-<option>Package Select করুন</option>
-<option>25 Diamond - 25 টাকা</option>
-<option>50 Diamond - 45 টাকা</option>
-<option>115 Diamond - 90 টাকা</option>
-<option>240 Diamond - 180 টাকা</option>
-<option>355 Diamond - 270 টাকা</option>
-<option>480 Diamond - 360 টাকা</option>
-<option>610 Diamond - 450 টাকা</option>
-<option>850 Diamond - 630 টাকা</option>
-<option>1240 Diamond - 900 টাকা</option>
-<option>2530 Diamond - 1800 টাকা</option>
-<option>Weekly - 170 টাকা</option>
-<option>Weekly Lite - 50 টাকা</option>
-<option>Monthly - 780 টাকা</option>
-</select>
+<h2>Choose Your Offer</h2>
 
-<input type="text" placeholder="Free Fire Player ID">
+
+<div class="menu">
+
+
+<div class="box" onclick="openOffer('Weekly')">
+    🎁
+    <h3>Weekly</h3>
+    <p>170 টাকা</p>
+</div>
+
+
+<div class="box" onclick="openOffer('Weekly Lite')">
+    ⭐
+    <h3>Weekly Lite</h3>
+    <p>50 টাকা</p>
+</div>
+
+
+<div class="box" onclick="openOffer('Monthly')">
+    👑
+    <h3>Monthly</h3>
+    <p>780 টাকা</p>
+</div>
+
+
+<div class="box" onclick="openOffer('Diamond')">
+    💎
+    <h3>Diamond Top Up</h3>
+    <p>Choose Package</p>
+</div>
+
+
+</div>
+
+
+
+<div id="orderPage" class="page">
+
+
+<h2 id="offerName"></h2>
+
+
+<input type="text" placeholder="Free Fire UID">
+
 
 <input type="text" placeholder="Server ID">
 
 
-<h3>💰 Payment</h3>
+<h3>Payment Method</h3>
 
-<p>bKash Number: আপনার নাম্বার এখানে দিন</p>
 
-<button>
-📋 bKash Number Copy
+<label>
+<input type="radio" name="payment">
+bKash
+</label>
+
+
+<label>
+<input type="radio" name="payment">
+Add Money
+</label>
+
+
+<br><br>
+
+
+<button onclick="showPayment()">
+Continue
 </button>
 
 
-<input type="text" placeholder="Transaction ID (TrxID)">
-
-<input type="file" accept="image/*">
+</div>
 
 
-<button>
-✅ Order Submit
+
+
+<div id="paymentPage" class="page">
+
+
+<h2>Payment</h2>
+
+
+<p>bKash Number</p>
+
+
+<button onclick="copyNumber()">
+📋 Copy Number
 </button>
 
-</section>
-
-
-
-<section class="card">
-
-<h2>💵 Add Money</h2>
-
-<input type="number" placeholder="Amount লিখুন">
 
 <input type="text" placeholder="Transaction ID">
 
-<input type="file" accept="image/*">
-
 
 <button>
-💰 Add Money Submit
+Submit Order
 </button>
 
-</section>
 
-
-
-<section class="card">
-
-<h2>📱 Contact</h2>
-
-<button>
-📋 WhatsApp Number Copy
-</button>
-
-</section>
+</div>
 
 
 

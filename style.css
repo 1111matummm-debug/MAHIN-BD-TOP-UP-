@@ -1,24 +1,30 @@
-body{
-  background:#111;
-  color:#fff;
-  font-family:Arial,sans-serif;
-  text-align:center;
-  margin:0;
-  padding:20px;
+// Order Submit
+function sendOrder() {
+    alert("ধন্যবাদ! আপনার অর্ডার গ্রহণ করা হয়েছে।");
 }
 
-h1{
-  color:#00ff99;
+
+// bKash Number Copy
+function copyBkash() {
+    navigator.clipboard.writeText("আপনার bKash নাম্বার");
+    alert("bKash নাম্বার কপি হয়েছে");
 }
 
-p{
-  font-size:20px;
+
+// WhatsApp Number Copy
+function copyWhatsApp() {
+    navigator.clipboard.writeText("আপনার WhatsApp নাম্বার");
+    alert("WhatsApp নাম্বার কপি হয়েছে");
 }
 
-button{
-  background:#00ff99;
-  color:#000;
-  border:none;
-  padding:10px 20px;
-  border-radius:8px;
+
+// Add Money Submit
+function addMoney() {
+    alert("আপনার Add Money রিকোয়েস্ট গ্রহণ করা হয়েছে।");
+}
+
+
+// Transaction ID Check
+function checkTransaction() {
+    alert("আপনার Transaction ID জমা হয়েছে। যাচাই করা হবে।");
 }

@@ -1,154 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>MAHIN BD TOP UP</title>
 
-<style>
-body{
-margin:0;
-font-family:Arial,sans-serif;
-background:#f5f5f5;
-}
-
-header{
-background:#0066ff;
-color:white;
-padding:18px;
-text-align:center;
-font-size:28px;
-font-weight:bold;
-}
-
-.container{
-max-width:450px;
-margin:auto;
-padding:15px;
-}
-
-.card{
-background:white;
-border-radius:15px;
-padding:15px;
-margin-top:15px;
-box-shadow:0 2px 10px rgba(0,0,0,.15);
-}
-
-input{
-width:100%;
-padding:12px;
-margin:8px 0;
-border:1px solid #ccc;
-border-radius:10px;
-font-size:16px;
-box-sizing:border-box;
-}
-
-button{
-width:100%;
-padding:14px;
-margin:6px 0;
-border:none;
-border-radius:10px;
-font-size:17px;
-color:white;
-cursor:pointer;
-}
-
-.blue{background:#007bff;}
-.green{background:#28a745;}
-.orange{background:#ff9800;}
-.purple{background:#9c27b0;}
-.red{background:#f44336;}
-.cyan{background:#00bcd4;}
-
-.price{
-font-size:18px;
-line-height:35px;
-}
-
-.footer{
-text-align:center;
-padding:20px;
-color:#555;
-}
-</style>
-
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-💎 MAHIN BD TOP UP
+    💎 MAHIN BD TOP UP 💎
 </header>
 
-<div class="container">
 
-<div class="card">
+<section class="card">
 
-<h2>🔥 Free Fire Top Up</h2>
+<h2>🔥 Free Fire Diamond Top Up</h2>
 
-<input type="text" placeholder="Enter Player UID">
+<select>
+<option>Package Select করুন</option>
+<option>25 Diamond - 25 টাকা</option>
+<option>50 Diamond - 45 টাকা</option>
+<option>115 Diamond - 90 টাকা</option>
+<option>240 Diamond - 180 টাকা</option>
+<option>355 Diamond - 270 টাকা</option>
+<option>480 Diamond - 360 টাকা</option>
+<option>610 Diamond - 450 টাকা</option>
+<option>850 Diamond - 630 টাকা</option>
+<option>1240 Diamond - 900 টাকা</option>
+<option>2530 Diamond - 1800 টাকা</option>
+<option>Weekly - 170 টাকা</option>
+<option>Weekly Lite - 50 টাকা</option>
+<option>Monthly - 780 টাকা</option>
+</select>
 
-<input type="text" placeholder="Enter Player Name">
+<input type="text" placeholder="Free Fire Player ID">
 
-</div>
+<input type="text" placeholder="Server ID">
 
-<div class="card">
 
-<h2>💎 Diamond Price</h2>
+<h3>💰 Payment</h3>
 
-<div class="price">
-25 💎 = ৳22<br>
-50 💎 = ৳47<br>
-115 💎 = ৳90<br>
-240 💎 = ৳180<br>
-355 💎 = ৳270<br>
-480 💎 = ৳360<br>
-610 💎 = ৳450<br>
-850 💎 = ৳630
-</div>
+<p>bKash Number: আপনার নাম্বার এখানে দিন</p>
 
-</div>
-
-<div class="card">
-
-<h2>Select Package</h2>
-
-<button class="blue">💎 Diamond Top Up</button>
-
-<button class="green">📅 Weekly Membership</button>
-
-<button class="orange">✨ Weekly Lite</button>
-
-<button class="purple">📆 Monthly Membership</button>
-
-<button class="red">🎫 Level Up Pass</button>
-
-<button class="cyan">🔥 Evo Access</button>
-
-</div>
-
-<div class="card">
-
-<h2>Payment</h2>
-
-<p><b>bKash:</b> 01749858840</p>
-
-<a href="https://wa.me/8801749858840">
-<button class="green">
-📞 Order on WhatsApp
+<button>
+📋 bKash Number Copy
 </button>
-</a>
 
-</div>
 
-</div>
+<input type="text" placeholder="Transaction ID (TrxID)">
 
-<div class="footer">
-© MAHIN BD TOP UP
-</div>
+<input type="file" accept="image/*">
+
+
+<button>
+✅ Order Submit
+</button>
+
+</section>
+
+
+
+<section class="card">
+
+<h2>💵 Add Money</h2>
+
+<input type="number" placeholder="Amount লিখুন">
+
+<input type="text" placeholder="Transaction ID">
+
+<input type="file" accept="image/*">
+
+
+<button>
+💰 Add Money Submit
+</button>
+
+</section>
+
+
+
+<section class="card">
+
+<h2>📱 Contact</h2>
+
+<button>
+📋 WhatsApp Number Copy
+</button>
+
+</section>
+
+
+
+<script src="script.js"></script>
 
 </body>
 </html>

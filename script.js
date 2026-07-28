@@ -1,43 +1,22 @@
-// Offer Open System
+// MAHIN BD TOP UP
 
-function openOffer(name) {
+// Menu Click
+document.querySelectorAll("nav a").forEach(link=>{
+    link.addEventListener("click",function(e){
+        e.preventDefault();
+        alert(this.innerText + " Page Coming Soon");
+    });
+});
 
-    document.getElementById("orderPage").style.display = "block";
+// Product Card Click
+document.querySelectorAll(".card").forEach(card=>{
+    card.addEventListener("click",function(){
 
-    document.getElementById("offerName").innerHTML = name + " Selected";
+        let product=this.querySelector("h3").innerText;
 
-    document.getElementById("paymentPage").style.display = "none";
+        localStorage.setItem("product",product);
 
-}
+        window.location.href="checkout.html";
 
-
-
-// Payment Page Show
-
-function showPayment() {
-
-    document.getElementById("paymentPage").style.display = "block";
-
-}
-
-
-
-// bKash Number Copy
-
-function copyNumber() {
-
-    navigator.clipboard.writeText("আপনার bKash নাম্বার");
-
-    alert("bKash নাম্বার কপি হয়েছে");
-
-}
-
-
-
-// Order Submit
-
-function submitOrder(){
-
-    alert("আপনার অর্ডার গ্রহণ করা হয়েছে।");
-
-}
+    });
+});

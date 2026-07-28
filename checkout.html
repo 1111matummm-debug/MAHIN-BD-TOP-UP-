@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout - MAHIN BD TOP UP</title>
+
+<link rel="stylesheet" href="checkout.css">
+
+</head>
+<body>
+
+<div class="container">
+
+<div class="top">
+
+<h2>Checkout</h2>
+
+<p>Complete Your Payment</p>
+
+</div>
+
+<div class="card">
+
+<h3>Total Amount</h3>
+
+<h1 id="amount">৳0</h1>
+
+</div>
+
+<div class="card">
+
+<h3>bKash Send Money</h3>
+
+<input type="text"
+id="bkashNumber"
+value="017XXXXXXXX"
+readonly>
+
+<button id="copyBtn">
+Copy Number
+</button>
+
+</div>
+
+<div class="card">
+
+<h3>Transaction ID</h3>
+
+<input
+type="text"
+id="trxid"
+placeholder="Enter Transaction ID">
+
+<p class="note">
+Payment করার পর Transaction ID লিখে VERIFY চাপুন।
+</p>
+
+<button id="verifyBtn">
+VERIFY
+</button>
+
+</div>
+
+</div>
+
+<script src="checkout.js"></script>
+
+</body>
+</html>

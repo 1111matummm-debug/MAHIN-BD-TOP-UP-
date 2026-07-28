@@ -3,130 +3,67 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>MAHIN BD TOP UP</title>
 
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
 <header>
-    <h1>💎 MAHIN BD TOP UP 💎</h1>
+
+<div class="logo">
+<h2>MAHIN BD TOP UP</h2>
+</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Top Up</a>
+<a href="#">Orders</a>
+<a href="#">Support</a>
+<a href="#">Profile</a>
+</nav>
+
 </header>
 
+<section class="banner">
 
-<div class="banner">
-    <h2>🔥 Free Fire Top Up Store 🔥</h2>
-    <p>Instant Diamond & Membership Top Up</p>
+<h1>FREE FIRE TOPUP</h1>
+
+<p>Fast • Secure • Auto Delivery</p>
+
+</section>
+
+<section class="products">
+
+<div class="card">
+<img src="images/uid.jpg">
+<h3>UID TOPUP</h3>
 </div>
 
-
-<h2>Choose Your Offer</h2>
-
-
-<div class="menu">
-
-
-<div class="box" onclick="openOffer('Weekly')">
-    🎁
-    <h3>Weekly</h3>
-    <p>170 টাকা</p>
+<div class="card">
+<img src="images/weekly.jpg">
+<h3>WEEKLY</h3>
 </div>
 
-
-<div class="box" onclick="openOffer('Weekly Lite')">
-    ⭐
-    <h3>Weekly Lite</h3>
-    <p>50 টাকা</p>
+<div class="card">
+<img src="images/monthly.jpg">
+<h3>MONTHLY</h3>
 </div>
 
-
-<div class="box" onclick="openOffer('Monthly')">
-    👑
-    <h3>Monthly</h3>
-    <p>780 টাকা</p>
+<div class="card">
+<img src="images/diamond.jpg">
+<h3>DIAMOND</h3>
 </div>
 
+</section>
 
-<div class="box" onclick="openOffer('Diamond')">
-    💎
-    <h3>Diamond Top Up</h3>
-    <p>Choose Package</p>
-</div>
+<footer>
 
+<p>© 2026 MAHIN BD TOP UP</p>
 
-</div>
-
-
-
-<div id="orderPage" class="page">
-
-
-<h2 id="offerName"></h2>
-
-
-<input type="text" placeholder="Free Fire UID">
-
-
-<input type="text" placeholder="Server ID">
-
-
-<h3>Payment Method</h3>
-
-
-<label>
-<input type="radio" name="payment">
-bKash
-</label>
-
-
-<label>
-<input type="radio" name="payment">
-Add Money
-</label>
-
-
-<br><br>
-
-
-<button onclick="showPayment()">
-Continue
-</button>
-
-
-</div>
-
-
-
-
-<div id="paymentPage" class="page">
-
-
-<h2>Payment</h2>
-
-
-<p>bKash Number</p>
-
-
-<button onclick="copyNumber()">
-📋 Copy Number
-</button>
-
-
-<input type="text" placeholder="Transaction ID">
-
-
-<button>
-Submit Order
-</button>
-
-
-</div>
-
-
-
-<script src="script.js"></script>
+</footer>
 
 </body>
 </html>
